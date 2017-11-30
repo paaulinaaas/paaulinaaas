@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="Paulina Sikora. Junior Frontend Developer">
+		<title>Paulina Sikora Page</title>
+
+		<link rel="stylesheet" href="style.css">
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,700i,900,900i" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Ranchers" rel="stylesheet">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	
+	<script src="jquery.scrollTo.min.js"></script>
+		<script>
+		
+		jQuery(function($)
+		{
+			//zresetuj scrolla
+			$.scrollTo(0);
+			
+			$('#link1').click(function() { $.scrollTo($('#about'), 500); });
+			$('#link2').click(function() { $.scrollTo($('#resume'), 500); });
+			$('#link3').click(function() { $.scrollTo($('#portfolio'), 500); });
+			$('#link4').click(function() { $.scrollTo($('#contact'), 500); });
+			$('#scroll1').click(function() { $.scrollTo($('#about'), 500); });
+			$('#scroll2').click(function() { $.scrollTo($('#about'), 500); });
+			$('#scroll3').click(function() { $.scrollTo($('#about'), 500); });
+		}
+		);
+		</script>
+
+		<script type="text/javascript">
+		// Okienko popup
+			$(function() {
+				$("[data-windowId]").click(function(e) {
+					e.preventDefault();
+					var IdWindow = $(this).attr("data-windowId");
+					$(IdWindow).fadeIn();
+
+					$(IdWindow).find(".close").click(function() {
+						$(IdWindow).fadeOut();
+					})
+				});
+			});
+		</script>
+
+	</head>
+	<body>
+		<header>
+			<nav id="about">
+				<div class="logo">
+					<h1> Paulina Sikora</h1>
+						<p>Junior Frontend Developer</p>
+					
+				</div>
+				<ul>
+					<li><a id="link1" href="#">About Me</a></li>
+					<li><a id="link2" href="#">Resume</a></li>
+					<li><a id="link3" href="#">Portfolio</a></li>
+					<li><a id="link4" href="#">Contact</a></li>
+				</ul>
+			</nav>
+
+			<section class="flex-container">
+				<div id="window1" class="popup_outside">
+					<div class="popup_inside">
+						<span class="close">&times;</span>
+						<h1>I have the skills and knowledge of:</h1>
+						<h2>Good knowledge</h2>
+						<p>HTML5, CSS3, Bootstrap, Sass, Git & Github</p>
+						<h2>I still need to work on:</h2>
+						<p>JavaScript, JQuery, React</p>
+						<h2>Basic knowledge of:</h2>
+						<p>Redux, Express.js, MongoDB, Node.js</p>
+					</div>
+				</div>
+				<div id="window2" class="popup_outside">
+					<div class="popup_inside">
+						<span class="close">&times;</span>
+						<h1>Follow Me:</h1>
+						<h3>Lindkedin</h3>
+						<p>www.linkedin.com/in/paulina-sikora089</p>
+						<h3>Facebook</h3>
+						<p>https://www.facebook.com/paulina.sikora.927</p>
+						<h3>Github</h3>
+						<p>https://github.com/paaulinaaas</p>
+						<h3>E-mail</h3>
+						<p>psikora089@gmail.com</p>
+					</div>
+				</div>
+				<div id="window3" class="popup_outside">
+					<div class="popup_inside">
+						<span class="close">&times;</span>
+						<h1>Here you can see my bootcamp certificate:</h1>
+						<embed src="kodilla.pdf" width="75%" height="75%" border="none" />
+					</div>
+				</div>
+				<div class="col1">
+					<h1>Hello.</h1>
+					<h2> My name is Paulina.</h2> 
+					<h3> I'm a Junior Frontend Developer. Here you can read, something more about me:</h3>
+					<img src="paulina2.jpg">
+					<div class="icons">
+						<div class="button but1" data-windowId="#window1"><a href="">Skills</a></div>
+						<div class="button but2" data-windowId="#window2"><a href="#">Follow Me</a></div>
+						<div class="button but3" data-windowId="#window3"><a href="#">More</a></div>
+					</div>
+					<p>I'm seeking for a position that will develop my skills.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco.
+					</p>
+				</div>
+				<div class="col2">
+					<img src="paulina2.jpg">	
+
+				</div>
+			</section>
+		</header>
+
+		<section class="resume" id="resume">
+			<div id="window4" class="popup_outside">
+				<div class="popup_inside">
+					<span class="close">&times;</span>
+					<h1>Soon... :)</h1>						
+				</div>
+			</div>
+			<div id="window4" class="popup_outside">
+				<div class="popup_inside">
+					<span class="close">&times;</span>
+					<h1>Soon... :)</h1>						
+				</div>
+			</div>
+			<h1>If you like to know something more about me, then you are welcome to see my video-cv and standard resume :)</h1>
+			<div class="cv">
+				<button data-windowId="#window4">
+						<i class="fa fa-file-video-o" aria-hidden="true"></i>
+						<h2>Video</h2>
+				</button>
+				<button data-windowId="#window5">
+						<i class="fa fa-file-text-o" aria-hidden="true"></i>
+						<h2>Standard</h2>
+				</button>
+			</div>
+			<div class="scroll" id="scroll1">
+				<i class="fa fa-chevron-up" aria-hidden="true"></i>
+			</div>
+		</section>
+
+		<section class="portfolio" id="portfolio">
+			<div class="square square1">					
+				<div class="layer">
+					<button><i class="fa fa-search" aria-hidden="true"></i></button>
+					<button><i class="fa fa-github" aria-hidden="true"></i></button>
+				</div>
+				<img src="page1.png">
+			</div>
+			<div class="square square2">
+				<div class="layer">
+					<button><i class="fa fa-search" aria-hidden="true"></i></button>
+					<button><i class="fa fa-github" aria-hidden="true"></i></button>
+				</div>
+				<img src="page2.png">
+			</div>
+			<div class="square square3">
+			<div class="layer">
+					<button><i class="fa fa-search" aria-hidden="true"></i></button>
+					<button><i class="fa fa-github" aria-hidden="true"></i></button>
+				</div>
+				<img src="quote.png">
+			</div>
+			<div class="square square4">				
+				<div class="layer">
+					<button><i class="fa fa-search" aria-hidden="true"></i></button>
+					<button><i class="fa fa-github" aria-hidden="true"></i></button>
+				</div>
+				<img src="quote.png">
+			</div>
+			<div class="square square5">
+				<div class="layer">
+					<button><i class="fa fa-search" aria-hidden="true"></i></button>
+					<button><i class="fa fa-github" aria-hidden="true"></i></button>
+				</div>
+				<img src="kanban.png">
+			</div>
+			<div class="square square6">
+				<div class="layer">
+					<button><i class="fa fa-search" aria-hidden="true"></i></button>
+					<button><i class="fa fa-github" aria-hidden="true"></i></button>
+				</div>
+				<img src="gra.png">
+			</div>
+			<div class="scroll" id="scroll2">
+				<i class="fa fa-chevron-up" aria-hidden="true"></i>
+			</div>
+		</section>
+
+		<section class="contact" id="contact">
+			<form action="mail.php" method="post">
+				<h2>Contact Form</h2>
+				<p>I'm waiting for a message from you :)</p>
+				<label>Your Name</label>
+				<input name="name" placeholder="Name" type="text" required>
+				<label>Email</label>
+				<input name="email" placeholder="name@gmail.com" type="text" required>
+				<label>Contact Number</label>
+				<input name="contact" placeholder="123456789" type="text" required>
+				<label>Message</label>
+				<textarea name="message" placeholder="Message" rows="10" required>
+				</textarea>
+				<input id="submit" type="submit" value="Send">
+			</form>
+			<div class="scroll" id="scroll3">
+				<i class="fa fa-chevron-up" aria-hidden="true"></i>
+			</div>
+			</section>
+
+		<footer>
+			<div class="fot personal">
+				<i class="fa fa-envelope-o" aria-hidden="true"></i>
+				<div class="data">
+					<h1>Contact</h1>
+					<p>Email: psikora089@gmail.com<br>Phone: +31 685 493 331</p>
+				</div>
+			</div>
+			<div class="fot follow">
+				<i class="fa fa-user" aria-hidden="true"></i>
+				<div class="data">
+					<h1>Follow Me</h1>
+					<button>
+						<a href="https://www.linkedin.com/in/paulina-sikora089">
+							<i class="fa fa-linkedin" aria-hidden="true"></i>
+						</a>
+					</button>
+					<button>
+						<a href="https://www.facebook.com/paulina.sikora.927">
+							<i class="fa fa-facebook" aria-hidden="true"></i>
+						</a>
+					</button>
+				</div>
+			</div>
+			<div class="fot created">
+				<i class="fa fa-smile-o" aria-hidden="true"></i>
+				<p>Copyright © 2017 <br> Created with <i class="fa fa-heart" aria-hidden="true"></i> by Paulina Sikora </p>
+			</div>
+		</footer>
+	</body>
+</html>
